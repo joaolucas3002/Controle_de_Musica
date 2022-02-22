@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>musicas</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body id="body">
+    <audio id="music" preload="metadata"></audio>
+    <div id="container">
+        <div id="imagem"></div>
+
+        <div id="descricao">
+            <h2 id="nomeMSC">ola</h2>
+            <h3 id="artistMSC"> ola</h3>
+        </div>
+        <div id="comtainerBarra">
+            <p id="inicio">0:00</p>
+            <p id="fim">0:00</p>
+            <input type="range" id="barraProgreso" value="0" min="0"  step="1">
+        </div>
+
+        <div id="containerFlex">
+           <img src="botoes/fast_rewind_black_24dp.svg" alt="" id="retroceder" onclick="retroceder()">
+           <img src="botoes/replay_10_black_24dp.svg" alt="" id="menos10" onclick="menos10()">
+           <img src="botoes/play_arrow_black_24dp.svg" alt="" id="play" onclick="play1()">
+           <img src="botoes/forward_10_black_24dp.svg" alt="" id="mais10" onclick="mais10()">
+           <img src="botoes/fast_forward_black_24dp.svg" alt="" id="avancar" onclick="avancar()">
+
+<!--<img src="botoes/pause_black_24dp.svg" alt=""> -->
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
