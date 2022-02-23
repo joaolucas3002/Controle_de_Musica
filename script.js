@@ -29,6 +29,7 @@ valMusic()
 function valMusic() {
     audio.src = catalogoMusica[index].musica;
     body.style.backgroundImage = `url(${catalogoMusica[index].background})`;
+    body.style.opacity = 0.6;
     imagem.style.backgroundImage = `url(${catalogoMusica[index].img})`;
     nomeMSC.innerHTML = catalogoMusica[index].name;
     artistMSC.innerText = catalogoMusica[index].artist,
