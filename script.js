@@ -35,6 +35,8 @@ function valMusic() {
     audio.addEventListener('loadeddata', () => {
     fim.textContent = segundosParaMinutos(Math.floor(audio.duration))} ) }
 
+
+//controles
 function retroceder() {
     tocar = false;
     index--;
@@ -56,11 +58,8 @@ function avancar(){
     audio.pause()
     play1()
 };
-//barra de rolagem
-
 
 barra.value = audio.currentTime
-//controles
 
 const Vplay = document.getElementById("play")
 
@@ -84,7 +83,7 @@ function play1() {
 function mais10() {
     audio.currentTime += 10
 }
-
+//barra de rolagem
 function segundosParaMinutos(segundos) {
     let campoMinutos = Math.floor(segundos / 60);
     let campoSegundos = segundos % 60;
